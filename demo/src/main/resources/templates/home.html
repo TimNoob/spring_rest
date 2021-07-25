@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title th:text="${title}" />
+    </head>
+    <body>
+        <h1>TEST REST APP</h1>
+        <hr>
+        <input placeholder="Введите ID данных"/>
+        <button onclick="document.location.href = (document.location.href+'rest?id='+document.getElementsByTagName('input')[0].value)">Найти</button>
+    </body>
+</html>
